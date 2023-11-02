@@ -14,7 +14,7 @@ from flask_gravatar import Gravatar
 from sqlalchemy.exc import IntegrityError, NoResultFound
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ["secret_key"]
+app.config['secret_key'] = os.environ["secret_key"]
 ckeditor = CKEditor(app)
 Bootstrap(app)
 login_manager = LoginManager()
